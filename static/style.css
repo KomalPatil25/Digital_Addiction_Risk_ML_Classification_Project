@@ -1,0 +1,200 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 420px;
+    margin: 60px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #2193b0;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #969b04;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.low {
+    background: #E8F5E9;
+    color: #2E7D32;
+}
+
+.medium {
+    background: #FFF8E1;
+    color: #F9A825;
+}
+
+.high {
+    background: #FFEBEE;
+    color: #C62828;
+} */
+
+
+
+
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: linear-gradient(135deg, #994ca2, #4ba08c);
+}
+
+/* Center page */
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Glass card */
+.card {
+    width: 500px;
+    background: rgba(114, 226, 2, 0.15);
+    backdrop-filter: blur(14px);
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* Header */
+h1 {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    opacity: 0.85;
+    margin-bottom: 25px;
+}
+
+/* Grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.field {
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Inputs */
+input {
+    width: 90%;
+    padding: 9px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.25s;
+}
+
+input:focus {
+    box-shadow: 0 0 0 2px #ffffff80;
+    transform: scale(1.02);
+}
+
+/* Button */
+.analyze-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.analyze-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* Result */
+.result {
+    margin-top: 22px;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: bold;
+    animation: fadeIn 0.4s ease;
+}
+
+.low {
+    background: #4caf50;
+}
+
+.medium {
+    background: #ff9800;
+}
+
+.high {
+    background: #e53935;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
