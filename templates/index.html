@@ -1,0 +1,106 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>AI Digital Addiction Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>🧠 Digital Addiction Risk Analyzer</h2>
+
+    <form method="post">
+        <label>Screen Time (hrs)</label>
+        <input type="number" step="0.1" name="screen_time" required>
+
+        <label>Social Media (hrs)</label>
+        <input type="number" step="0.1" name="social_media" required>
+
+        <label>Sleep Hours</label>
+        <input type="number" step="0.1" name="sleep" required>
+
+        <label>Physical Activity (min)</label>
+        <input type="number" name="activity" required>
+
+        <label>App Unlocks Per Day</label>
+        <input type="number" name="unlocks" required>
+
+        <button type="submit">Analyze Risk</button>
+    </form>
+
+    {% if prediction %}
+        {% if prediction == "Low" %}
+            <div class="result low">🟢 Low Addiction Risk</div>
+        {% elif prediction == "Medium" %}
+            <div class="result medium">🟡 Moderate Addiction Risk</div>
+        {% else %}
+            <div class="result high">🔴 High Addiction Risk</div>
+        {% endif %}
+    {% endif %}
+</div>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Digital Addiction Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="page">
+
+    <div class="card">
+        <h1>🧠 Digital Addiction Risk Analyzer</h1>
+        <p class="subtitle">Understand your digital habits & wellbeing</p>
+
+        <form method="post">
+            <div class="grid">
+                <div class="field">
+                    <label>Screen Time (hrs)</label>
+                    <input type="number" step="0.1" name="screen_time" required>
+                </div>
+
+                <div class="field">
+                    <label>Social Media (hrs)</label>
+                    <input type="number" step="0.1" name="social_media" required>
+                </div>
+
+                <div class="field">
+                    <label>Sleep Hours</label>
+                    <input type="number" step="0.1" name="sleep" required>
+                </div>
+
+                <div class="field">
+                    <label>Physical Activity (min)</label>
+                    <input type="number" name="activity" required>
+                </div>
+
+                <div class="field">
+                    <label>App Unlocks / Day</label>
+                    <input type="number" name="unlocks" required>
+                </div>
+            </div>
+
+            <button class="analyze-btn">✨ Analyze Risk</button>
+        </form>
+
+        {% if prediction %}
+            {% if prediction == "Low" %}
+                <div class="result low">🟢 Low Addiction Risk</div>
+            {% elif prediction == "Medium" %}
+                <div class="result medium">🟡 Moderate Addiction Risk</div>
+            {% else %}
+                <div class="result high">🔴 High Addiction Risk</div>
+            {% endif %}
+        {% endif %}
+
+    </div>
+
+</div>
+
+</body>
+</html>
