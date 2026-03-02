@@ -1,89 +1,8 @@
-/* body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #2193b0, #6dd5ed);
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 420px;
-    margin: 60px auto;
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
-
-h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-label {
-    font-weight: bold;
-}
-
-input {
-    width: 100%;
-    padding: 8px;
-    margin: 6px 0 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background: #2193b0;
-    border: none;
-    color: white;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #969b04;
-}
-
-.result {
-    margin-top: 20px;
-    padding: 12px;
-    border-radius: 8px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.low {
-    background: #E8F5E9;
-    color: #2E7D32;
-}
-
-.medium {
-    background: #FFF8E1;
-    color: #F9A825;
-}
-
-.high {
-    background: #FFEBEE;
-    color: #C62828;
-} */
-
-
-
-
-
-
-
-
-
-
 
 body {
     margin: 0;
     font-family: "Segoe UI", Tahoma, sans-serif;
-    background: linear-gradient(135deg, #994ca2, #4ba08c);
+    background: linear-gradient(135deg, #d5fff2, #f4f6f7);
 }
 
 /* Center page */
@@ -97,7 +16,7 @@ body {
 /* Glass card */
 .card {
     width: 500px;
-    background: rgba(114, 226, 2, 0.15);
+    background: rgb(108, 177, 167);
     backdrop-filter: blur(14px);
     border-radius: 18px;
     padding: 30px;
